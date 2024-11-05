@@ -52,11 +52,11 @@ def exploracion_dataframe(dataframe, columna_control):
         dataframe_filtrado = dataframe[dataframe[columna_control] == categoria]
     
         print("\n ..................... \n")
-        print(f"Los principales estadísticos de las columnas categóricas para el {categoria.upper()} son: ")
+        print(f"Los principales estadísticos de las columnas categóricas para el {categoria} son: ")
         display(dataframe_filtrado.describe(include = "O").T)
         
         print("\n ..................... \n")
-        print(f"Los principales estadísticos de las columnas numéricas para el {categoria.upper()} son: ")
+        print(f"Los principales estadísticos de las columnas numéricas para el {categoria} son: ")
         display(dataframe_filtrado.describe().T)
 
 
